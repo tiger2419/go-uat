@@ -22,6 +22,10 @@ func main() {
 
 	//group.Add(10)
 
+	var strInt int = 64
+
+	sprintln := fmt.Sprintln(strInt)
+	fmt.Println(sprintln)
 	for i := 1; i <= 10; i++ {
 		go goruntineDemo(i)
 	}
@@ -92,8 +96,6 @@ func catChannel() {
 	fmt.Println(sums(float64(f1), float64(f2)))
 }
 
-func sums(
-	f1 float64, f2 float64) float64 {
-
+func sums(f1 float64, f2 float64) float64 {
 	return f1 + f2
 }
